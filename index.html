@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batch-10 sixth Assignment</title>
+    <!-- css  -->
+     
     <!-- DaisyUi Start  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -70,8 +72,55 @@
           </div>
         </div>
     </header>
-    <main>
-        
+    <main class="w-11/12 lg:w-10/12 mx-auto">
+        <section class="adopt-your-best-friend">
+          <div class="text-and-button">
+            <div class="text sm:w-8/12 mx-auto md:text-center">
+              <h2 class="text-2xl font-bold mb-4">Adopt  Your  Best Friend</h2>
+            <p class="text-gray-600">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+            </div>
+          </div>
+        </section>
     </main>
+    <footer class="footer bg-black text-white p-10 sm:flex md:justify-between">
+      <nav>
+        <div class="logo">
+          <a class="flex text-xl cursor-pointer gap-2"><img class="w-5 h-5 self-center" src="assets/logo.webp" alt="Logo"><span class="font-bold text-3xl">Peddy</span></a>
+        </div>
+        <address>
+          <p>Location: av. Washington 165, NY CA 54003</p>
+          <p>Phone: +31 85 964 47 25</p>
+          <p>Email: info@yourdomain.com</p>
+          <p>Openings hours: 9.00 AM - 5.00 PM</p>
+        </address>
+        <ul class="flex gap-4 text-3xl">
+          <li><a href="#"><i class="fa-brands fa-facebook text-blue-500"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube text-red-500"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram text-purple-500"></i></a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Useful Links</h6>
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Animals</a>
+        <a class="link link-hover">Foundation</a>
+        <a class="link link-hover">Contact</a>
+      </nav>
+      <form>
+        <h6 class="footer-title">Drop a Message</h6>
+        <fieldset class="form-control">
+          <div>
+            <input
+              type="text"
+              placeholder="username@site.com"
+              class="input input-bordered bg-gray-800" />
+              <br>
+            <button class="btn bg-teal-600 text-white mt-4">Subscribe</button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
 </body>
 </html>
