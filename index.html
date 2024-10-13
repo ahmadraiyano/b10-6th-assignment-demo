@@ -56,7 +56,7 @@
                 </div>
               </div>
         </nav>
-        <div class="hero min-h-screen">
+        <div class="hero my-6">
           <div class="hero-content flex-col lg:text-center">
             <div class="sm:w-8/12 mx-auto">
               <h2 class="text-lg text-gray-500">Bringing Families Together</h2>
@@ -72,7 +72,7 @@
           </div>
         </div>
     </header>
-    <main class="w-11/12 lg:w-10/12 mx-auto">
+    <main class="w-10/12 mx-auto">
         <section class="adopt-your-best-friend">
           <div class="text-and-button">
             <div class="text sm:w-8/12 mx-auto md:text-center">
@@ -82,12 +82,13 @@
           </div>
         </section>
     </main>
-    <footer class="footer bg-black text-white p-10 sm:flex md:justify-between">
+    <footer class="bg-black text-white p-10">
+      <div class="w-11/12 lg:w-10/12 mx-auto sm:flex sm:flex-row sm:justify-between">
       <nav>
         <div class="logo">
           <a class="flex text-xl cursor-pointer gap-2"><img class="w-5 h-5 self-center" src="assets/logo.webp" alt="Logo"><span class="font-bold text-3xl">Peddy</span></a>
         </div>
-        <address>
+        <address class="py-4">
           <p>Location: av. Washington 165, NY CA 54003</p>
           <p>Phone: +31 85 964 47 25</p>
           <p>Email: info@yourdomain.com</p>
@@ -100,7 +101,7 @@
           <li><a href="#"><i class="fa-brands fa-instagram text-purple-500"></i></a></li>
         </ul>
       </nav>
-      <nav>
+      <nav class="flex flex-col my-8 sm:my-0">
         <h6 class="footer-title">Useful Links</h6>
         <a class="link link-hover">Home</a>
         <a class="link link-hover">About us</a>
@@ -121,6 +122,9 @@
           </div>
         </fieldset>
       </form>
+      </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
