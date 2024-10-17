@@ -33,20 +33,30 @@ const displayPets = (pets) => {
     const petsContainer = document.getElementById("pets");
 
     pets.forEach(pet => {
-        console.log(pet);
 
         const card = document.createElement("div");
         card.classList = "card border";
         card.innerHTML =
         `
-        <figure class="px-5 pt-5">
+        <figure class="p-4 h-52">
     <img
       src=${pet.image}
       alt="Pets"
-      class="rounded-xl" />
+      class="rounded-xl h-full w-full object-cover" />
   </figure>
-  <div class="card-body items-center text-center">
-    
+  <div class="p-5">
+    <h2 class="font-bold text-2xl">${pet.pet_name}</h2>
+    <ul class="border-b pb-4">
+        <li class="my-2"><i class="fa-solid fa-table-cells-large"></i> Breed: ${pet.breed}</li>
+        <li><i class="fa-regular fa-calendar"></i> Birth: ${pet.date_of_birth}</li>
+        <li class="my-2"><i class="fa-solid fa-mercury"></i> Gender: ${pet.gender}</li>
+        <li><i class="fa-solid fa-dollar-sign"></i> Price: ${pet.price}</li>
+    </ul>
+    <div class="flex justify-between mt-4">
+        <button class="btn bg-white"><i class="fa-regular fa-thumbs-up"></i></button>
+        <button class="btn bg-white text-teal-600">Adopt</button>
+        <button class="btn bg-white text-teal-600">Details</button>
+    </div>
   </div>
         `;
     petsContainer.append(card);
