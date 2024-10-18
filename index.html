@@ -64,7 +64,7 @@
               <p class="py-6 text-gray-600">
                   It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.
               </p>
-              <button class="btn bg-teal-600 text-white">View More</button>
+              <a href="#main" class="btn bg-teal-600 text-white">View More</a>
             </div>
             <img
               src="assets/pet.webp"
@@ -72,8 +72,8 @@
           </div>
         </div>
     </header>
-    <main class="w-10/12 mx-auto">
-        <section class="adopt-your-best-friend">
+    <main id="main">
+        <section class="adopt-your-best-friend w-10/12 mx-auto">
           <div class="text-and-button">
             <div class="text sm:w-8/12 mx-auto md:text-center">
               <h2 class="text-2xl font-bold mb-4">Adopt  Your  Best Friend</h2>
@@ -81,7 +81,7 @@
             </div>
           </div>
         </section>
-        <section>
+        <section class="w-10/12 mx-auto">
           <div id="categories" class="py-3 flex justify-between sm:justify-evenly ">
 
           </div>
@@ -89,24 +89,12 @@
             <div id="pets" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:w-9/12 my-8"></div>
 
             <aside class="w-full lg:w-3/12 card my-8 border">
-              <div class="card bg-base-100 shadow-xl border">
-                <figure class="px-5 pt-5">
-                  <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"
-                    class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
             </aside>
           </div>
         </section>
+        <section id="detailsPopup" class="hidden w-screen h-screen bg-opacity-50 bg-black fixed top-0 z-20 content-center">
+          
+      </section>
     </main>
 
 
